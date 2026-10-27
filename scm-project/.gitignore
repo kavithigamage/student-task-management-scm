@@ -1,0 +1,44 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Visual Studio Code settings
+.vscode/
+
+# Other IDE settings
+.idea/
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+*~
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# JavaScript dependencies (if added in the future)
+node_modules/
+
+# Build output (if added in the future)
+dist/
+build/
+
+# Test coverage reports
+coverage/
+
+# Cache files
+.cache/
+
+# Backup files
+*.backup
+*.swp
+*.swo

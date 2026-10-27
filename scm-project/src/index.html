@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="logo-icon">📚</span>
+            <div>
+                <h1>Library Management System</h1>
+                <p>Manage your library collection</p>
+            </div>
+            <button id="themeToggle" type="button">🌙 </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="stats">
+            <div>Total Books: <span id="total">0</span></div>
+            <div>Available: <span id="available">0</span></div>
+            <div>Borrowed: <span id="borrowed">0</span></div>
+        </section>
+
+        <section class="add-book">
+            <h2>Add a Book</h2>
+            <form id="bookForm">
+                <input id="title" placeholder="Book title" required>
+                <input id="author" placeholder="Author name" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+
+        <section>
+            <input id="search" placeholder="Search books...">
+            <h2>Book Collection</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookList"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>CSE2552 | Software Configuration Management</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

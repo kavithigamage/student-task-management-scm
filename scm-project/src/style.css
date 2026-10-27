@@ -1,0 +1,201 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+header {
+    background: #2479ba;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background: #075b3b;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stats div {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #ddd;
+}
+
+.add-book, main section {
+    margin-bottom: 25px;
+}
+
+input {
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+#search {
+    width: 100%;
+}
+
+button {
+    background: #2479ba;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+button:hover {
+    background: #2479ba;
+}
+
+.delete {
+    background: #c0392b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 13px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #e2eee7;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2479ba;
+    color: white;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    font-size: 45px;
+}
+
+.logo h1 {
+    margin: 0 0 10px;
+}
+
+.logo p {
+    margin: 0;
+}
+
+/* Theme toggle button */
+#themeToggle {
+    margin-top: 20px;
+    background: white;
+    color: #075b3b;
+    border: 1px solid #ccc;
+    padding: 10px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: #181818;
+    color: #f1f1f1;
+}
+
+.dark-mode main .stats div,
+.dark-mode table {
+    background: #252525;
+    color: #f1f1f1;
+}
+
+.dark-mode th {
+    background: #333;
+}
+
+.dark-mode td,
+.dark-mode th {
+    border-color: #444;
+}
+
+.dark-mode input {
+    background: #252525;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode input::placeholder {
+    color: #bbb;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .stats {
+        flex-direction: column;
+    }
+
+    #bookForm input {
+        width: 100%;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+}
+
+
+
