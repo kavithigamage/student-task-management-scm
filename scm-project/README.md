@@ -225,3 +225,8 @@ Book information may be stored temporarily in the browser or maintained in JavaS
 The Library Management System provides a practical opportunity to apply Software Configuration Management concepts in a team-based development environment.
 
 By maintaining a shared repository, using feature branches, writing meaningful commits, reviewing changes, testing features, and documenting the development process, the team aims to demonstrate effective SCM practices throughout the practical sessions.
+
+
+## Current Development Status
+Initial version completed.
+Version: 0.1.0
