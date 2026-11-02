@@ -16,6 +16,5 @@ The following Configuration Items (CIs) have been identified for the Library Man
 | CI-05 | `docs/scm-record.md` | Documentation | SCM Lead | v0.1 |
 | CI-06 | `tests/test-cases.md` | Test Artifact | Reviewer/Tester | v0.1 |
 | CI-07 | `.gitignore` | Configuration File | SCM Lead | v0.1 |
-| CI-08 | `docs/scm-workflow.md` | SCM Documentation | SCM Lead | v0.1 |
-| CI-09 | `docs/project-overview.md` | Project Documentation | Team | v0.1 |
+
 
