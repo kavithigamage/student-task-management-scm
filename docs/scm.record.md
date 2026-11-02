@@ -18,3 +18,33 @@ The following Configuration Items (CIs) have been identified for the Library Man
 | CI-07 | `.gitignore` | Configuration File | SCM Lead | v0.1 |
 
 
+# Software Configuration Management (SCM) Record
+
+## Task 09 – Baseline Record
+
+**Baseline ID:** BL-01
+
+**Baseline Version:** v0.1.0
+
+**Project Name:** Student Task Management System
+
+**Baseline Date:** 02 November 2026
+
+**Description:** This baseline represents the agreed stable version of the Student Task Management System, including the project documentation, source files, test cases, and SCM records.
+
+**Included Configuration Items (CIs):**
+- README.md
+- docs/project-overview.md
+- docs/scm-workflow.md
+- docs/scm-record.md
+- src/index.html
+- src/style.css
+- src/script.js
+- tests/test-cases.md
+- .gitignore
+
+**Purpose:** To establish a reference point for future development and change management.
+
+**Git Tag:** v0.1.0
+
+**Status:** Approved
