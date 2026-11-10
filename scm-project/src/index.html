@@ -30,10 +30,26 @@
         <section class="add-book">
             <h2>Add a Book</h2>
             <form id="bookForm">
-                <input id="title" placeholder="Book title" required>
-                <input id="author" placeholder="Author name" required>
-                <button type="submit">Add Book</button>
-            </form>
+    <input
+        id="title"
+        type="text"
+        placeholder="Book title"
+        maxlength="100"
+        required
+    >
+
+    <input
+        id="author"
+        type="text"
+        placeholder="Author name"
+        maxlength="60"
+        required
+    >
+
+    <button type="submit">Add Book</button>
+</form>
+
+<p id="validationMessage" role="alert" aria-live="polite"></p>
         </section>
 
         <section>
