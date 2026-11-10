@@ -195,6 +195,11 @@ body.dark-mode {
     .table-container {
         overflow-x: auto;
     }
+    #validationMessage {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
 }
 
 
