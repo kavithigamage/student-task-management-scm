@@ -48,3 +48,63 @@ The following Configuration Items (CIs) have been identified for the Library Man
 **Git Tag:** v0.1.0
 
 **Status:** Approved
+
+## Task 04 – Branching Strategy
+
+### Selected Branching Strategy
+
+The team selected the Feature-Branch Workflow
+for the Library Management System project.
+
+This approach allows developers to work
+independently on different features without
+directly modifying the main branch.
+
+### Branching Structure
+
+**1. main**
+
+- Contains the stable integrated version
+  of the application.
+- Changes are integrated after development,
+  review and testing.
+
+**2. feature/CR-02-ui-update**
+
+- Used by Student A.
+- Responsible for user interface development.
+- Includes improvements to the layout,
+  styling, buttons and overall appearance.
+
+**3. feature/CR-03-validation**
+
+- Used by Student B.
+- Responsible for book input validation.
+- Includes empty-field validation,
+  whitespace validation and input limits.
+
+### Justification for Selecting This Strategy
+
+The Feature-Branch Workflow was selected
+because two developers are working on
+different features independently.
+
+It provides the following benefits:
+
+1. Allows parallel development.
+2. Prevents unfinished changes from directly
+   affecting the main branch.
+3. Makes changes easier to track and review.
+4. Supports testing before integration.
+5. Helps identify and resolve merge conflicts.
+
+### Integration Approach
+
+After completing their respective features,
+both developers will push their branches
+to GitHub.
+
+The team will review and test the changes
+before merging them into main.
+
+**Status:** Feature development in progress.

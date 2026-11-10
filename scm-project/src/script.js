@@ -113,3 +113,97 @@ themeToggle.addEventListener("click", () => {
     localStorage.setItem("theme", theme);
     updateThemeButton();
 });
+
+
+const bookForm = document.getElementById("bookForm");
+
+const titleInput = document.getElementById("title");
+const authorInput = document.getElementById("author");
+
+const validationMessage =
+    document.getElementById("validationMessage");
+
+bookForm.addEventListener("submit", function(event) {
+
+    // Prevent automatic form submission
+    event.preventDefault();
+
+    // Get input values and remove extra spaces
+    const title = titleInput.value.trim();
+    const author = authorInput.value.trim();
+
+    // Check empty title
+    if (title === "") {
+        showMessage("Please enter a book title.", "error");
+        titleInput.focus();
+        return;
+    }
+
+    // Check empty author
+    if (author === "") {
+        showMessage("Please enter the author's name.", "error");
+        authorInput.focus();
+        return;
+    }
+
+    // Check title length
+    if (title.length > 100) {
+        showMessage("Book title cannot exceed 100 characters.", "error");
+        titleInput.focus();
+        return;
+    }
+
+    // Check author length
+    if (author.length > 60) {
+        showMessage("Author name cannot exceed 60 characters.", "error");
+        authorInput.focus();
+        return;
+    }
+
+    // All validations passed
+    showMessage("Book details are valid!", "success");
+
+    // Continue with your existing book-adding functionality here
+
+});
+
+function showMessage(message, type) {
+
+    validationMessage.textContent = message;
+
+    validationMessage.style.color =
+        type === "error" ? "red" : "green";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
